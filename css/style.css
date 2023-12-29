@@ -1,0 +1,586 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fafafa; 
+    background-attachment: fixed;  
+    
+}
+
+
+p {
+    margin: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    
+  }
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #141414;
+    
+}
+
+
+
+
+
+
+.headline {
+   
+    text-align: center;
+    padding: 272px 0 40px;
+}
+
+
+
+/* Главная страница  */
+
+.hedder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2020;
+    padding: 15px 30px;
+    width: 100%;
+
+}
+
+#container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+#logo{
+    width: 45px;
+    height: 45px;
+}
+
+.left-hedder a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 27px;
+  color: var(--third-text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 40px;
+  
+}
+
+.center-hedder {
+    display: flex;
+    margin: 0;
+    
+}
+
+
+
+.center-hedder a {
+    
+    height: 40px;
+    line-height: 40px;
+    color: var(--third-text-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 30px;
+    transition: all 0.3s;
+    
+}
+
+.center-hedder a:hover {
+    color: #B94ACB;
+    
+}
+
+.rigth-hedder a {
+    
+    cursor: pointer;
+    text-align: center;
+    padding: 3px 20px; 
+    line-height: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #B94ACB;
+    border-radius: 5px;
+  
+    text-transform: uppercase;
+}
+
+.rigth-hedder a:hover {
+    background-color: #8a3697;
+}
+
+
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-family:  'Montserrat', sans-serif;
+    color: #c8c8c8;
+    margin: 30px 0 30px;
+
+}
+
+.title2 {
+    font: 'Roboto', sans-serif;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: #c8c8c8;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+#box-main{
+    width: 100%;
+}
+
+#box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.box-2 {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 284px;
+    margin: 0 20px 40px 0;
+    cursor: pointer;
+
+}
+
+
+
+.box-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    
+}
+
+.box-p1 {
+    background-color: #B94ACB;
+    padding: 0 10px;
+   
+
+    
+    
+}
+
+.box-p2 {
+    background-color: #F8D649;
+    padding: 0 10px;
+    color: #141414;
+       
+}
+
+.box-h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #c8c8c8;
+    margin-top: 20px;
+    
+    
+    
+}
+
+
+
+
+
+
+/* карточка с аниме  */
+
+.box-main-card {
+    background-color: #1F2020;
+    margin: 30px 30px 30px 30px;
+}
+
+.box-up-card{
+    display: flex;
+    padding: 40px 20px 20px 20px;
+}
+
+.box-img-card {
+
+}
+
+.box-description {
+    width: 100%;
+    padding:0 0 0 20px;
+}
+
+.title-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-close-h1 {
+    font-size: 21px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(200, 200, 200);
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+
+
+.material-symbols-outlined {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #141414;
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+
+.material-symbols-outlined:hover {
+    color:#B94ACB;
+  }
+  
+ .btn-box-decr{
+    padding: 0;
+    border: none;
+    margin: 0;
+    background-color: #1F2020;
+    height: 24px;
+ } 
+
+ .box-decr-main{
+    display: flex;
+    flex-wrap: wrap
+ }
+
+ .box-decr-main p{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .box-decr-left {
+    text-align: start;
+   
+    width: 30%;
+ }
+
+ .box-decr-rigth {
+
+    text-align: start;
+    
+    width: 70%;
+
+ }
+
+ .box-decr-rigth p{
+    color: rgb(200, 200, 200);
+    font-weight: 300;
+
+ }
+
+ .black-div{
+    background-color: #141414;;
+ }
+
+ .b-d-l-1, .b-d-r-1 {
+    padding: 5px 0 5px 8px;
+ }
+
+
+ .btn-card-down a {
+     
+    cursor: pointer;
+    text-align: center;
+    padding: 11px 60px;
+    
+    line-height: 40px;
+    
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #B94ACB;
+    border-radius: 5px;
+    
+    text-transform: uppercase;
+    box-shadow: 0 10px 30px rgb(191 61 203 / 34%)
+}
+
+.btn-card-down a:hover {
+    background-color: #8a3697;
+    box-shadow: 0 10px 30px rgb(138 54 151 / 34%)
+}
+
+.btn-card-down{
+margin-top: 40px;
+text-align: end;
+}
+
+
+
+.box-center-card{
+    padding: 20px 20px 20px 20px;
+}
+
+
+.box-center-card h4{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(200, 200, 200);
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+.box-center-card p{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(200, 200, 200);
+    font-weight: 300;
+    line-height: 27.2px;
+    text-align:left;
+}
+
+
+.box-down-card{
+    padding: 0 20px 40px 20px;
+}
+
+
+.margin-video{
+    height: 40px;
+    width: 100%;
+}
+
+
+.box-down-card h4{
+    margin-bottom: 40px;
+}
+
+
+.burger {
+    padding: 10px 10px 5px 10px; 
+    background: #141414;
+    margin-left: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.btn-box-decr-mobile2 {
+    display: none;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+
+.burger_container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transition: all 0.3s linear;
+    display: none;
+    opacity: 0;
+}
+
+
+.show_burger_container{
+    display: block;
+}
+
+.show_burger_container2{
+    opacity: 1;
+}
+
+.burger_menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -280px;
+    width: 280px;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999;
+    background: #1F2020;
+    transition: all 0.3s linear;
+}
+
+.show_burger_menu {
+    left: 0px;
+}
+
+.burger-close {
+    position: fixed;
+    top: -40px;
+    left: 280px;
+    z-index: 102;
+    background: #e84e36;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.show_burger-close {
+    top: 0px;
+}
+
+.burger-close span {
+    background: none;
+    cursor: pointer;
+}
+
+.burger-close span:hover {
+    color: #fafafa;
+    transition: all 0.3s;
+}
+
+
+
+
+/* 
+часто применяющиеся классы */
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+
+/* Мобильные версии */
+
+@media (max-width: 1200px) {
+    .headline {
+        padding: 0;
+    }
+
+    .center-hedder-none {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .box-up-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .box-img-card {
+        margin-bottom: 40px;
+    }
+
+    .btn-box-decr-mobile {
+        display: none;
+    }
+
+    .btn-box-decr-mobile2 {
+       display: flex;
+    }
+}
+
+
+
+@media (max-width: 590px) {
+    .left-hedder a {
+        font-size: 18px;
+    }
+
+ 
+}
+
+@media (max-width: 470px) {
+    .left-hedder img {
+        display: none;
+    }
+
+    .box-decr-rigth p {
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width: 420px) {
+  
+    .box-description p{
+       font-size: 12px;
+    }
+
+    .box-down-card h4{
+        font-size:22px ;
+    }
+
+}
+
+
+@media (max-width: 379px) {
+  
+    .box-description p{
+       font-size: 11px;
+    }
+
+    .box-down-card h4{
+        font-size:21px ;
+    }
+
+    .btn-card-down a {
+        padding: 11px 50px;
+    }
+
+    .box-center-card {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>yummyanime.tv</title>
+</head>
+
+
+<!-- Верхнее меню -->
+
+<body background="img/fon-1.webp">
+
+
+
+
+    <!-- главная страница  -->
+
+    <main class="main">
+
+        <div class="burger_container">
+              
+        
+        </div>
+
+        <div class="burger_menu">
+            <ul class="center-hedder column">
+                <li> <a href="#"> Жанры</a>
+                </li>
+                <li> <a href="#"> СЕРИАЛЫ</a>
+                </li>
+                <li> <a href="#"> ФИЛЬМЫ</a>
+                </li>
+                <li> <a href="#"> ТОП 100</a>
+                </li>
+                <li> <a href="#"> АНОНСЫ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-close">
+            <span class="material-symbols-outlined ">
+                close
+            </span>
+        </div>
+
+        <section class="headline">
+            <div class="container">
+                <div class="hedder">
+                    <div class="left-hedder">
+                        <a href="#">
+                            <img id="logo" src="img/logo2.png" alt="">
+                        </a>
+                        <a href="#">YummyAnime
+                            <span style="color: #B94ACB;">.TV</span>
+                        </a>
+                    </div>
+                    <ul class="center-hedder center-hedder-none">
+                        <li> <a href="#"> Жанры</a>
+                        </li>
+                        <li> <a href="#"> СЕРИАЛЫ</a>
+                        </li>
+                        <li> <a href="#"> ФИЛЬМЫ</a>
+                        </li>
+                        <li> <a href="#"> ТОП 100</a>
+                        </li>
+                        <li> <a href="#"> АНОНСЫ</a>
+                        </li>
+                    </ul>
+                    <div class="rigth-hedder flex center">
+                        <a href="#">ВОЙТИ</a>
+                        <div class="burger">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="container2">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Шаблоны  -->
+
+    <template id="cards-template">
+        <div class='box-2'>
+            <div class='box-3'>
+                <p class='box-p1'>★ ${averageRating}</p>
+                <p class='box-p2'>${episodeCount} серий</p>
+            </div>
+            <img onclick="createCard(${id})" src=' ${image}'>
+            <div class="hover-cards"></div>
+            <h2 class='box-h2'>${titles}</h2>
+        </div>
+    </template>
+
+
+
+
+
+
+
+    <template id="one-card-template">
+        <div class="box-main-card">
+            <div class="box-up-card">
+                <div class="btn-box-decr-mobile2">
+                    <button onclick="createCatalog()" class="btn-box-decr">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <div class="box-img-card">
+                    <img src="${img}" alt="">
+                </div>
+                <div class="box-description">
+                    <div class="title-close">
+                        <h1 class='title-close-h1'>${titles2}</h1>
+                        <button onclick="createCatalog()" class="btn-box-decr btn-box-decr-mobile">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div class="box-decr-main">
+                        <div class="box-decr-left">
+                            <div class="b-d-l-1 black-div">
+                                <p>Год выхода:</p>
+                            </div>
+                            <div class="b-d-l-1">
+                                <p>Время:</p>
+                            </div>
+                            <div class="b-d-l-1 black-div">
+                                <p>Серий:</p>
+                            </div>
+                            <div class="b-d-l-1">
+                                <p>Рейтинг:</p>
+                            </div>
+                            <div class="b-d-l-1 black-div">
+                                <p>Возраст:</p>
+                            </div>
+                            <div class="b-d-l-1">
+                                <p>Просмотров:</p>
+                            </div>
+                            <div class="b-d-l-1 black-div">
+                                <p>Избранное:</p>
+                            </div>
+                        </div>
+                        <div class="box-decr-rigth">
+                            <div class="b-d-r-1 black-div">
+                                <p>${startDate}</p>
+                            </div>
+                            <div class="b-d-r-1">
+                                <p>${episodeLength} мин.</p>
+                            </div>
+                            <div class="b-d-r-1 black-div">
+                                <p>${episodeCount}</p>
+                            </div>
+                            <div class="b-d-r-1">
+                                <p>★ ${averageRating} / 100</p>
+                            </div>
+                            <div class="b-d-r-1 black-div">
+                                <p>${ageRatingGuide}</p>
+                            </div>
+                            <div class="b-d-r-1">
+                                <p>${userCount}</p>
+                            </div>
+                            <div class="b-d-r-1 black-div">
+                                <p>${favoritesCount}</p>
+                            </div>
+
+                        </div>
+                        <div class="rigth-hedder btn-card-down">
+                            <a href="#vidosUrl">▶ СМОТРЕТЬ ОНЛАЙН</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-center-card">
+                <h4> <span style="color:#B94ACB;">Описание </span>мультсериала:</h4>
+                <p>${description}</p>
+            </div>
+
+            <div class="box-down-card">
+                <div id="vidosUrl" class="margin-video"></div>
+                <h4>Смотреть аниме сериал <span style="color:#B94ACB;">${titles}</span> онлайн</h4>
+
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/${youtubeVideoId}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </template>
+
+
+    <template id="title-main-timplate">
+        <h1 class="title">Смотреть мультфильмы аниме онлайн</h1>
+        <h2 class="title2">Аниме — не просто детские мультфильмы, а нечто большее. Это разновидность художественной
+            анимации, которую нравится смотреть онлайн людям самого разного возраста — от малышей до бабушек и дедушек.
+            А особенно круто, когда все эти анимешки на русском языке, все серии мультфильмов идут подряд и доступны
+            совершенно бесплатно. Некоторые, правда, по ошибке продолжают причислять эти произведения искусства к
+            «мультикам». Хотя по сложности сюжета, глубине персонажей они часто превосходят привычные фильмы, снятые на
+            плёнку.</h2>
+        <div id="box1">
+        </div>
+    </template>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+
+    
+</body>
+
+</html>
